@@ -5,19 +5,23 @@
     padding: 0%;
     margin: 0%;
 }
+
 body {
     max-width: 100vw;
     height: 100%;
     background-color: #ffffff;
+
     header {
         align-items: center;
         display: flex;
         padding-top: 20px;
         justify-content: space-around;
         font-family: "Poppins", sans-serif;
+
         img {
             width: 128px;
         }
+
         button {
             width: 207px;
             background-color: #ff0000;
@@ -26,50 +30,61 @@ body {
             border-radius: 60px;
             color: white;
             font-family: "Poppins", sans-serif;
+            cursor: pointer;
         }
+
         nav {
             display: flex;
             gap: 50px;
+
             a {
                 text-decoration: none;
                 color: black;
                 font-family: "Poppins", sans-serif;
                 transition: 0.4s ease-in-out;
                 font-weight: 400;
+
                 &:hover {
                     color: #ff0000;
                 }
             }
         }
     }
+
     main {
         display: flex;
         flex-direction: column;
+
         #heroContent {
             padding-top: 120px;
             display: flex;
             align-items: center;
             justify-content: space-around;
             padding-bottom: 150px;
+
             #imgHero {
                 img {
                     width: 400px;
                 }
             }
+
             #textHero {
                 width: 50%;
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
+
                 h1 {
                     font-size: 48px;
                     font-family: "Koh Santepheap", serif;
                     font-weight: 400;
                 }
+
                 p {
                     font-size: 24px;
                     font-family: "Poppins", sans-serif;
                 }
+
                 button {
                     width: 229px;
                     height: 54px;
@@ -78,36 +93,44 @@ body {
                     font-family: "Poppins", sans-serif;
                     border: none;
                     border-radius: 64px;
+                    cursor: pointer;
                 }
             }
         }
+
         #aboutUs {
             display: flex;
             justify-content: space-around;
             padding-bottom: 200px;
+
             img {
                 width: 592px;
             }
+
             #aboutUsBox {
                 display: flex;
                 flex-direction: column;
                 gap: 40px;
+
                 h1 {
                     font-size: 24px;
                     font-family: "Koh Santepheap", serif;
                     color: #ff0000;
                 }
+
                 h2 {
                     font-family: "Koh Santepheap", serif;
                     font-size: 48px;
                     font-weight: 400;
                 }
+
                 p {
                     font-size: 20px;
                     font-family: "Poppins", sans-serif;
                 }
             }
         }
+
         #pratosPopulares {
             display: flex;
             flex-direction: column;
@@ -115,14 +138,17 @@ body {
             align-items: center;
             gap: 150px;
             padding-bottom: 150px;
+
             h1 {
                 font-size: 48px;
                 font-family: "Koh Santepheap", serif;
                 font-weight: 400;
             }
+
             #pratosGrid {
                 display: flex;
                 gap: 20px;
+
                 div {
                     background-color: #f8f5f2;
                     width: 384px;
@@ -131,11 +157,13 @@ body {
                     align-items: center;
                     justify-content: center;
                     border-radius: 16px;
+
                     img {
                         width: 300px;
                         margin-top: -150px;
                     }
                 }
+
                 .pratos {
                     display: flex;
                     flex-direction: column;
@@ -143,16 +171,19 @@ body {
                     justify-content: center;
                     text-align: center;
                     gap: 30px;
+
                     h1 {
                         font-size: 32px;
                         color: #232323;
                         font-family: "Koh Santepheap", serif;
                     }
+
                     p {
                         font-family: "Poppins", sans-serif;
                         color: #232323;
                         font-size: 18px;
                     }
+
                     h2 {
                         color: #ff0000;
                         font-family: "Koh Santepheap", serif;
@@ -160,6 +191,7 @@ body {
                 }
             }
         }
+
         #comentarios {
             display: flex;
             justify-content: center;
@@ -167,30 +199,37 @@ body {
             gap: 30px;
             align-items: center;
             padding-bottom: 150px;
+
             h1 {
                 font-size: 32px;
                 color: #232323;
                 font-family: "Koh Santepheap", serif;
                 font-weight: 400;
             }
+
             #comFlex {
                 display: flex;
                 align-items: center;
                 gap: 20px;
+
                 #com1 {
                     margin: 0px;
                     padding: 30px;
+
                     &:hover {
                         transform: scale(105%);
                     }
                 }
+
                 #com2 {
                     margin: 0px;
                     padding: 30px;
+
                     &:hover {
                         transform: scale(105%);
                     }
                 }
+
                 div {
                     background-color: #f8f5f2;
                     border-radius: 16px;
@@ -199,13 +238,175 @@ body {
                     display: flex;
                     flex-direction: column;
                     gap: 20px;
+
                     p {
                         font-family: "Poppins", sans-serif;
                     }
+
                     img {
                         width: 120px;
                     }
                 }
+            }
+        }
+
+        @media screen and (max-width: 830px) {
+            #heroContent {
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    margin-bottom: 80px;
+                }
+
+                #imgHero {
+                    width: 120px;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            #aboutUs {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    display: flex;
+                    width: 600px;
+                    margin-bottom: 40px;
+                }
+            }
+
+            #textHero {
+                width: 100%;
+
+                h1 {
+                    font-size: 24px;
+                }
+            }
+
+            #imgHero img {
+                width: 300px;
+            }
+
+            header nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            header nav a {
+                font-size: 18px;
+            }
+
+            header button {
+                width: 150px;
+                height: 40px;
+            }
+            #pratosPopulares{
+                display: flex;
+                flex-direction: column;
+                #pratosGrid{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 180px;
+                }
+            }
+            #comentarios{
+                h1{
+                    text-align: left;
+                }
+                #comFlex{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+                }
+            }
+        }
+
+
+
+        @media screen and (max-width: 768px) {
+            #heroContent {
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    margin-bottom: 80px;
+                }
+            }
+
+            #textHero {
+                width: 100%;
+
+                h1 {
+                    font-size: 24px;
+                }
+            }
+
+            #imgHero img {
+                width: 300px;
+            }
+
+            header nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            header nav a {
+                font-size: 18px;
+            }
+
+            header button {
+                width: 150px;
+                height: 40px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #heroContent {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
+            #textHero h1 {
+                font-size: 20px;
+            }
+
+            #textHero p {
+                font-size: 18px;
+            }
+
+            #textHero button {
+                width: 150px;
+                height: 40px;
+            }
+
+            header nav {
+                gap: 10px;
+            }
+
+            header nav a {
+                font-size: 16px;
+            }
+
+            header button {
+                width: 120px;
+                height: 35px;
             }
         }
     }
